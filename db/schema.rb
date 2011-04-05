@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110405164329) do
+ActiveRecord::Schema.define(:version => 20110405181147) do
 
   create_table "choices", :force => true do |t|
     t.string   "name"
@@ -31,5 +31,15 @@ ActiveRecord::Schema.define(:version => 20110405164329) do
   end
 
   add_index "users", ["github_handle"], :name => "index_users_on_github_handle", :unique => true
+
+  create_table "votes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "choice_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "votes", ["choice_id", "user_id"], :name => "index_votes_on_choice_id_and_user_id"
+  add_index "votes", ["user_id", "choice_id"], :name => "index_votes_on_user_id_and_choice_id"
 
 end

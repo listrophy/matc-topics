@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   devise :omniauthable, :trackable
+  has_many :votes
 
   attr_accessible :github_handle, :github_token
 

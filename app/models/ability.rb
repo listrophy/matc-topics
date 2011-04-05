@@ -9,6 +9,10 @@ class Ability
     if user.github_handle == 'listrophy'
       can :manage, :all
     end
+    if user.persisted?
+      can :create, Vote, :user => user
+      can :destroy, Vote, :user => user
+    end
 
     # Define abilities for the passed in user here. For example:
     #

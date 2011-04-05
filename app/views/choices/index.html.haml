@@ -1,9 +1,6 @@
 %ul#choices
   - @choices.each do |choice|
     %li{'data-id' => choice.id}
-      %strong= choice.name
-      %p
-        votes:
-        = choice.votes.count
+      = render choice
 
 .clearfix

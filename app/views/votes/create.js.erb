@@ -1,0 +1,2 @@
+$("#choices li[data-id=<%= @choice.id %>]").html(
+"<%= escape_javascript(render(:partial => @choice)) %>");
