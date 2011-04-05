@@ -7,7 +7,7 @@
       $('#choices li[data-id=' + data.choice_id + '] .vote-count').html(data.vote_count);
     });
 
-- form_for (@choice || Choice.new), :html => {:style => 'float: right; text-align: center'} do |f|
+- form_for((@choice || Choice.new), :html => {:style => 'float: right; text-align: center'}) do |f|
   = field_set_tag 'Create your own!' do
     %div{:style => 'text-align: right'}
       = f.text_field :name
