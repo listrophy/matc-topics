@@ -12,6 +12,9 @@ production:
     BUNDLE_WITHOUT: "development:test"
     GITHUB_APP_ID: "<%= ENV['GITHUB_APP_ID'] %>"
     GITHUB_APP_SECRET: "<%= ENV['GITHUB_APP_SECRET'] %>"
+    PUSHER_APP_ID: "<%= ENV['PUSHER_APP_ID'] %>"
+    PUSHER_KEY: "<%= ENV['PUSHER_KEY'] %>"
+    PUSHER_SECRET: "<%= ENV['PUSHER_SECRET'] %>"
     # GOOGLE_ANALYTICS: "UA-12345678-1"
 
 staging:
@@ -20,3 +23,6 @@ staging:
     BUNDLE_WITHOUT: "development:test"
     GITHUB_APP_ID: "<%= ENV['GITHUB_APP_ID'] %>"
     GITHUB_APP_SECRET: "<%= ENV['GITHUB_APP_SECRET'] %>"
+    PUSHER_APP_ID: "<%= ENV['PUSHER_APP_ID'] %>"
+    PUSHER_KEY: "<%= ENV['PUSHER_KEY'] %>"
+    PUSHER_SECRET: "<%= ENV['PUSHER_SECRET'] %>"
