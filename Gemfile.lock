@@ -94,6 +94,9 @@ GEM
       json (>= 1.1.0)
       launchy (>= 0.3.2)
       rest-client (>= 1.2.0, < 2.0.0)
+    heroku_san (1.1.0)
+      heroku
+      rails (>= 2)
     hpricot (0.8.4)
     html5-boilerplate (0.3.2)
       compass (>= 0.10.0)
@@ -212,6 +215,7 @@ DEPENDENCIES
   git
   haml-rails
   heroku
+  heroku_san
   hpricot
   html5-boilerplate
   launchy

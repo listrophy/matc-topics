@@ -26,6 +26,7 @@ group :development do
 
   # for heroku deployment
   gem 'heroku', :require => false
+  gem 'heroku_san'
   gem 'git'
   gem 'taps'
 end
