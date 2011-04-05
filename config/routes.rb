@@ -1,4 +1,6 @@
 MatcTopics::Application.routes.draw do
+  resources :choices
+
   devise_for :users
 
   # The priority is based upon order of creation:
