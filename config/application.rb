@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
+Idkfa.load_keys :production, :credentials => File.expand_path('../credentials.yml', __FILE__)
+
 module MatcTopics
   class Application < Rails::Application
     config.generators do |g|

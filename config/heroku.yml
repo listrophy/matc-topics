@@ -10,9 +10,13 @@ production:
   app: matc-topics
   config:
     BUNDLE_WITHOUT: "development:test"
+    GITHUB_APP_ID: "<%= ENV['GITHUB_APP_ID'] %>"
+    GITHUB_APP_SECRET: "<%= ENV['GITHUB_APP_SECRET'] %>"
     # GOOGLE_ANALYTICS: "UA-12345678-1"
 
 staging:
   app: matc-topics-staging
   config:
     BUNDLE_WITHOUT: "development:test"
+    GITHUB_APP_ID: "<%= ENV['GITHUB_APP_ID'] %>"
+    GITHUB_APP_SECRET: "<%= ENV['GITHUB_APP_SECRET'] %>"

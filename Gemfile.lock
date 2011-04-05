@@ -106,6 +106,7 @@ GEM
     html5-boilerplate (0.3.2)
       compass (>= 0.10.0)
     i18n (0.5.0)
+    idkfa (0.0.2)
     json (1.5.1)
     json_pure (1.5.1)
     launchy (0.4.0)
@@ -237,6 +238,7 @@ DEPENDENCIES
   heroku_san
   hpricot
   html5-boilerplate
+  idkfa
   launchy
   looksee
   oa-oauth
