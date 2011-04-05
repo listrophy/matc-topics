@@ -11,12 +11,12 @@
 // Or, you can pick and choose only the sections
 // you want by using the these includes
 +html5-boilerplate-reset
-
 +html5-boilerplate-fonts
-
 +html5-boilerplate-styles
-
 +html5-boilerplate-helpers
+
+@import blueprint
++blueprint
 
 // Or, you can import the "overrides" partial if
 // you want more control over individual mixins
@@ -30,5 +30,20 @@
 // Media should come last
 @import partials/media
 
+#container
+  +container
+
 .hidden
   display: none
+
+body
+  +blueprint-typography(true)
+  +blueprint-utilities
+  +blueprint-debug
+  +blueprint-interaction
+  #header, #footer, #main
+    // true means it's the last column in the row
+    +column($blueprint-grid-columns, true)
+
+form
+  +blueprint-form

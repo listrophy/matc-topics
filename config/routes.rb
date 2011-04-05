@@ -1,7 +1,7 @@
 MatcTopics::Application.routes.draw do
   resources :choices
 
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
   root :to => 'choices#index'
 

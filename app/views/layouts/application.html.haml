@@ -4,6 +4,7 @@
   = render :partial => 'layouts/head'
   %body{ :lang => 'en', :class => "#{controller.controller_name}" }
     #container
+      = render :partial => 'layouts/login' if current_user.blank?
       %header#header
         = render :partial => 'layouts/header'
       #main{ :role => 'main' }
