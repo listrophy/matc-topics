@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
-if !(Rails.env.staging? || Rails.env.production?)
+if !%w(staging production).include?(RAILS_ENV)
   Idkfa.load_keys :production, :credentials => File.expand_path('../credentials.yml', __FILE__)
 end
 

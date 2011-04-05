@@ -2,7 +2,6 @@
 .DS_Store
 .bundle
 capybara-*.html
-config/database.yml
 config/credentials.yml
 db/*.db
 db/*.sql

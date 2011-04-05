@@ -1,0 +1,16 @@
+common: &COMMON
+  adapter: postgresql
+  username: brad
+  password:
+
+development:
+  <<: *COMMON
+  database: matc_topics_dev
+
+test: &test
+  <<: *COMMON
+  database: matc_topics_test
+
+production:
+  <<: *COMMON
+  database: matc_topics_prod
