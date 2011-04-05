@@ -12,6 +12,7 @@ class Ability
     if user.persisted?
       can :create, Vote, :user => user
       can :destroy, Vote, :user => user
+      can :create, Choice
     end
 
     # Define abilities for the passed in user here. For example:
