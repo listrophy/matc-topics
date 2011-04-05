@@ -1,3 +1,12 @@
+- content_for :javascripts do
+  = javascript_include_tag 'http://js.pusherapp.com/1.8/pusher.min.js'
+  :javascript
+    var pusher = new Pusher('42ec82fa313a5b936f94');
+    var channel = pusher.subscribe('votes');
+    channel.bind('vote', function(data) {
+      $('#choices li[data-id=' + data.choice_id + '] .vote-count').html(data.vote_count);
+    });
+
 %ul#choices
   - @choices.each do |choice|
     %li{'data-id' => choice.id}

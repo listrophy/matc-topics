@@ -13,6 +13,7 @@ gem 'haml-rails'
 gem 'html5-boilerplate'
 gem 'idkfa'
 gem "oa-oauth", :require => "omniauth/oauth"
+gem 'pusher'
 gem 'rack-ssl', :require => 'rack/ssl'
 
 gem 'awesome_print'

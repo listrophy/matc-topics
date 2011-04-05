@@ -1,6 +1,9 @@
 %p.voting
-  - if vote = current_user.votes.where(:choice_id => choice.id).first
-    You've voted for this!
-    = link_to 'x', vote, :method => :delete, :remote => true
+  - if current_user
+    - if vote = current_user.votes.where(:choice_id => choice.id).first
+      You've voted for this!
+      = link_to 'x', vote, :method => :delete, :remote => true
+    - else
+      = link_to 'Vote!', choice_votes_path(choice), :method => :post, :remote => true
   - else
-    = link_to 'Vote!', choice_votes_path(choice), :method => :post, :remote => true
+    You must be logged in to vote!

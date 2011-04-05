@@ -1,5 +1,5 @@
 %strong= choice.name
 %p
   votes:
-  = choice.votes.count
+  %span.vote-count= choice.votes.count
 = render :partial => '/choices/voting', :locals => {:choice => choice}
