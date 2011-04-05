@@ -96,10 +96,10 @@ GEM
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
-    heroku (1.6.3)
-      json (>= 1.1.0)
-      launchy (>= 0.3.2)
-      rest-client (>= 1.2.0, < 2.0.0)
+    heroku (1.19.1)
+      activesupport (>= 2.1.0)
+      launchy (~> 0.3.2)
+      rest-client (>= 1.4.0, < 1.7.0)
     heroku_san (1.1.0)
       heroku
       rails (>= 2)
@@ -110,7 +110,7 @@ GEM
     idkfa (0.0.2)
     json (1.5.1)
     json_pure (1.5.1)
-    launchy (0.4.0)
+    launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
     linecache19 (0.5.12)
@@ -243,7 +243,7 @@ DEPENDENCIES
   factory_girl_rails
   git
   haml-rails
-  heroku
+  heroku (>= 1.19.1)
   heroku_san
   hpricot
   html5-boilerplate

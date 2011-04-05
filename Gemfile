@@ -28,7 +28,7 @@ group :development do
   # gem 'capistrano'
 
   # for heroku deployment
-  gem 'heroku', :require => false
+  gem 'heroku', '>= 1.19.1', :require => false
   gem 'heroku_san'
   gem 'git'
   gem 'taps'
