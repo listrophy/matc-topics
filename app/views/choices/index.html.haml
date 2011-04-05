@@ -1,0 +1,19 @@
+- content_for :javascripts do
+  :javascript
+    var swap = function swap() {
+      $('#choices').quicksand( $('#choices-dest li') );
+    };
+
+    $(function(){
+      setTimeout(swap, 1000);
+    });
+
+%ul#choices
+  - @choices.each do |choice|
+    %li{'data-id' => choice.id}
+      = choice.name
+
+%ul#choices-dest.hidden
+  - @choices.sort{|a,b| a.name <=> b.name}.each do |choice|
+    %li{'data-id' => choice.id}
+      = choice.name

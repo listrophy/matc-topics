@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+['This App', 'Websockets', 'Haml & Compass'].each do |name|
+  Choice.find_or_create_by_name(name)
+end
