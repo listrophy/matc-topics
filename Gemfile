@@ -11,6 +11,7 @@ gem 'compass'
 gem 'devise', :git => 'git://github.com/plataformatec/devise.git'
 gem 'haml-rails'
 gem 'html5-boilerplate'
+gem "oa-oauth", :require => "omniauth/oauth"
 gem 'rack-ssl', :require => 'rack/ssl'
 
 gem 'awesome_print'
